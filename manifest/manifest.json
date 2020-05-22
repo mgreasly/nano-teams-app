@@ -1,0 +1,49 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.3",
+    "version": "1.0.0",
+    "id": "00000000-0000-0000-0000-000000000000",
+    "packageName": "com.avanade.nano-teams-app",
+    "developer": {
+        "name": "Avanade",
+        "websiteUrl": "https://www.avanade.com",
+        "privacyUrl": "https://www.microsoft.com/privacy",
+        "termsOfUseUrl": "https://www.microsoft.com/termsofuse"
+    },
+    "name": {
+        "short": "Nano Hello World",
+        "full": "Nano Hello World"
+    },
+    "description": {
+        "short": "Nano ReactHello World App for Microsoft Teams",
+        "full": "Sample app testing using React to provide a Teams app with multiple tabs."
+    },
+    "icons": {
+        "outline": "contoso20x20.png",
+        "color": "contoso96x96.png"
+    },
+    "accentColor": "#60A18E",
+    "staticTabs": [
+        {
+            "entityId": "com.avanade.nano-teams-app.hellotab",
+            "name": "Hello Tab",
+            "contentUrl": "https://yourteamsapp.ngrok.io/hello",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "configurableTabs": [
+        {
+            "configurationUrl": "https://yourteamsapp.ngrok.io/configure",
+            "canUpdateConfiguration": true,
+            "scopes": [
+                "team"
+            ]
+        }
+    ],
+    "bots": [],
+    "composeExtensions": [],
+    "permissions": [],
+    "validDomains": []
+}
