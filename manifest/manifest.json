@@ -11,23 +11,23 @@
         "termsOfUseUrl": "https://www.microsoft.com/termsofuse"
     },
     "name": {
-        "short": "Nano Hello World",
-        "full": "Nano Hello World"
+        "short": "Nano Teams App",
+        "full": "Nano Teams App"
     },
     "description": {
-        "short": "Nano ReactHello World App for Microsoft Teams",
-        "full": "Sample app testing using React to provide a Teams app with multiple tabs."
+        "short": "Nano App for Microsoft Teams",
+        "full": "Sample using React to provide a Teams app with multiple tabs."
     },
     "icons": {
-        "outline": "contoso20x20.png",
-        "color": "contoso96x96.png"
+        "outline": "teams20.png",
+        "color": "teams96.png"
     },
     "accentColor": "#60A18E",
     "staticTabs": [
         {
-            "entityId": "com.mgreasly.nano-teams-app.hellotab",
-            "name": "Hello Tab",
-            "contentUrl": "https://yourteamsapp.ngrok.io/hello",
+            "entityId": "com.mgreasly.nano-teams-app.tab",
+            "name": "Home Tab",
+            "contentUrl": "https://yourteamsapp.ngrok.io/home",
             "scopes": [
                 "personal"
             ]
