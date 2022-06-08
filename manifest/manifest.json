@@ -27,19 +27,15 @@
         {
             "entityId": "com.mgreasly.nano-teams-app.tab",
             "name": "Home Tab",
-            "contentUrl": "https://yourteamsapp.ngrok.io/home",
-            "scopes": [
-                "personal"
-            ]
+            "contentUrl": "https://soft-chimera-34d777.netlify.app/",
+            "scopes": ["personal"]
         }
     ],
     "configurableTabs": [
         {
-            "configurationUrl": "https://yourteamsapp.ngrok.io/configure",
+            "configurationUrl": "https://soft-chimera-34d777.netlify.app/configure",
             "canUpdateConfiguration": true,
-            "scopes": [
-                "team"
-            ]
+            "scopes": ["team"]
         }
     ],
     "bots": [],
