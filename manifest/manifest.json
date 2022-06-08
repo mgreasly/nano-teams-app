@@ -33,7 +33,7 @@
     ],
     "configurableTabs": [
         {
-            "configurationUrl": "https://soft-chimera-34d777.netlify.app/configure",
+            "configurationUrl": "https://soft-chimera-34d777.netlify.app/configure.html",
             "canUpdateConfiguration": true,
             "scopes": ["team"]
         }
