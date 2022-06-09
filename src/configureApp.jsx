@@ -1,22 +1,32 @@
 import React from "react";
-import * as msTeams from '@microsoft/teams-js';
+import * as teams from '@microsoft/teams-js';
+
+const tabs = ['index.html', 'tab.html'];
 
 export default () => {
-
-    msTeams.settings.registerOnSaveHandler(e => {
-        msTeams.settings.setSettings({
-            contentUrl: window.location.origin,
-            entityId: window.location.origin
+    const onChange = (url) => {
+        console.log(url);
+        teams.initialize();
+        teams.settings.registerOnSaveHandler(evt => {
+            const tabUrl = window.location.protocol + '//' + window.location.host + '/' + url;
+            teams.settings.setSettings({
+                contentUrl: tabUrl,
+                entityId: tabUrl
+            });
+            evt.notifySuccess();
         });
-        e.notifySuccess();
-    });
-    
-    msTeams.settings.setValidityState(true);
+        teams.settings.setValidityState(true);
+    }
 
     return (
         <>
             <h1>CONFIGURE: Welcome to Nano Vite Teams App!</h1>
             <p>Hard to get more minimal than this React app.</p>
+            <p>Select the tab to show:</p>
+            <select onChange={e => onChange(e.target.value)}>
+                <option>Select tab to show...</option>
+                {tabs.map((tab, index) => <option key={index}>{tab}</option>)}
+            </select>
         </>
     )
 };
