@@ -9,6 +9,11 @@ export default () => {
     teams.app.initialize();
 
     const onChange = (url) => {
+        console.log("onChange " + url);
+
+        console.log("setValidityState");;
+        teams.pages.config.setValidityState(true);
+
         teams.pages.config.registerOnSaveHandler(evt => {
             const tabUrl = window.location.protocol + '//' + window.location.host + '/' + url;
             console.log(tabUrl);
@@ -19,9 +24,6 @@ export default () => {
 
             console.log("notify success");;
             evt.notifySuccess();
-
-            console.log("setValidityState");;
-            teams.pages.config.setValidityState(true);
         });
     };
 
