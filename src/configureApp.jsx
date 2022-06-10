@@ -3,20 +3,20 @@ import * as teams from '@microsoft/teams-js';
 
 const tabs = ['index.html', 'tab.html'];
 
-export default () => {
+export default () => {    
     const onChange = (url) => {
         console.log(url);
-        teams.initialize();
-        teams.settings.registerOnSaveHandler(evt => {
+        teams.app.initialize();
+        teams.pages.config.registerOnSaveHandler(evt => {
             const tabUrl = window.location.protocol + '//' + window.location.host + '/' + url;
-            teams.settings.setSettings({
+            teams.pages.config.setConfig({
                 contentUrl: tabUrl,
                 entityId: tabUrl
             });
             evt.notifySuccess();
         });
-        teams.settings.setValidityState(true);
-    }
+        teams.pages.config.setValidityState(true);
+    };
 
     return (
         <>
