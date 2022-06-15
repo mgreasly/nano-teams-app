@@ -1,6 +1,6 @@
 {
     "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
-    "manifestVersion": "1.3",
+    "manifestVersion": "1.5",
     "version": "1.0.0",
     "id": "fc0bcd3e-92a5-492b-82c9-af5900b36a66",
     "packageName": "com.mgreasly.nano-teams-app",
@@ -27,7 +27,7 @@
         {
             "entityId": "com.mgreasly.nano-teams-app.tab",
             "name": "Home Tab",
-            "contentUrl": "https://soft-chimera-34d777.netlify.app/",
+            "contentUrl": "",
             "scopes": [
                 "personal"
             ]
@@ -35,7 +35,7 @@
     ],
     "configurableTabs": [
         {
-            "configurationUrl": "https://soft-chimera-34d777.netlify.app/configure.html",
+            "configurationUrl": "/configure.html",
             "canUpdateConfiguration": true,
             "scopes": [
                 "team"
