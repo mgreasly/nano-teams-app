@@ -7,18 +7,18 @@
         "build": "vite build",
         "preview": "vite preview"
     },
-    "dependencies": {
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2"
-    },
-    "devDependencies": {
-        "@microsoft/teams-js": "^2.0.0",
-        "babel-preset-nano-react-app": "^0.1.0",
-        "vite": "^2.9.10"    
-    },
     "babel": {
         "presets": [
             "nano-react-app"
         ]
+    },
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@microsoft/teams-js": "^2.5.0",
+        "babel-preset-nano-react-app": "^0.1.0",
+        "vite": "^3.2.4"
     }
 }
